@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* Navbar */
+header {
+    padding: 20px 50px;
+}
+
+.logo {
+    width: 130px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.text h1 {
+    font-size: 45px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.text p {
+    color: #ccc;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.buttons img {
+    width: 150px;
+    margin-right: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.buttons img:hover {
+    transform: scale(1.1);
+}
+
+/* Image animation */
+.image img {
+    width: 420px;
+    animation: float 3s infinite ease-in-out;
+}
+
+/* Features */
+.features {
+    text-align: center;
+    padding: 60px;
+}
+
+.features img {
+    width: 280px;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.features img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
